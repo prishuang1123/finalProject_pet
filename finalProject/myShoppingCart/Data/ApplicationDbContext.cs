@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace myShoppingCart.Data
@@ -9,5 +10,7 @@ namespace myShoppingCart.Data
             : base(options)
         {
         }
+
+        
     }
 }

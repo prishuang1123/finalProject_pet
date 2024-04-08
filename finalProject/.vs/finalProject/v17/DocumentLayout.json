@@ -1,7 +1,63 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/petShoppingCart/True/SqlTable/dbo.categories.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408083234_add2ndData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:myShoppingCart\\Migrations\\20240408083234_add2ndData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\models\\cartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\models\\cartcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408082537_addSeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:myShoppingCart\\Migrations\\20240408082537_addSeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +65,187 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.categories [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/petShoppingCart/True/SqlTable/dbo.categories.sql",
+              "ToolTip": "dbo.categories [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-08T08:33:41.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240408083234_add2ndData.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408083234_add2ndData.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Migrations\\20240408083234_add2ndData.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408083234_add2ndData.cs",
+              "RelativeToolTip": "myShoppingCart\\Migrations\\20240408083234_add2ndData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:32:34.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240408082537_addSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408082537_addSeedData.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Migrations\\20240408082537_addSeedData.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Migrations\\20240408082537_addSeedData.cs",
+              "RelativeToolTip": "myShoppingCart\\Migrations\\20240408082537_addSeedData.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:25:37.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartContext.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\CartContext.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Models\\CartContext.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\CartContext.cs",
+              "RelativeToolTip": "myShoppingCart\\Models\\CartContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:14:54.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "myShoppingCart\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T07:39:55.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "myShoppingCart\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T07:39:27.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "myShoppingCart\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwEUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:26:51.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T06:12:15.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "myShoppingCart\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "myShoppingCart\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T06:10:02.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "myShoppingCart\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:02:10.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Program.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Program.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Program.cs",
+              "RelativeToolTip": "myShoppingCart\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T02:03:53.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "myShoppingCart\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:59:26.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\appsettings.json",
+              "RelativeDocumentMoniker": "myShoppingCart\\appsettings.json",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\appsettings.json",
+              "RelativeToolTip": "myShoppingCart\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-08T01:47:53.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\Category.cs",
+              "RelativeToolTip": "myShoppingCart\\Models\\Category.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T01:32:06.239Z",
+              "EditorCaption": ""
             }
           ]
         }
