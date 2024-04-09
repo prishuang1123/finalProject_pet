@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yuan\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject\\finalProject_pet\\finalProject\\",
+  "WorkspaceRootPath": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\yuan\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject\\finalproject_pet\\finalproject\\myshoppingcart\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\yuan\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject\\finalproject_pet\\finalproject\\myshoppingcart\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|c:\\users\\euyua\\desktop\\pris\\\u8CC7\u7B56\u6703\\finalproject_pet\\finalproject\\myshoppingcart\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47E395E-6009-4E21-8B67-E97B0C132D15}|myShoppingCart\\myShoppingCart.csproj|solutionrelative:myshoppingcart\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yuan\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "myShoppingCart\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yuan\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "myShoppingCart\\Views\\Category\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-08T15:38:59.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\yuan\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "myShoppingCart\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\yuan\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "myShoppingCart\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwBcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T15:16:42.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "myShoppingCart\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Models\\Category.cs",
+              "RelativeToolTip": "myShoppingCart\\Models\\Category.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T02:48:53.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "myShoppingCart\\Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "myShoppingCart\\Views\\Category\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T02:23:42.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\euyua\\Desktop\\Pris\\\u8CC7\u7B56\u6703\\finalProject_pet\\finalProject\\myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "myShoppingCart\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T01:40:03.558Z",
               "EditorCaption": ""
             }
           ]
