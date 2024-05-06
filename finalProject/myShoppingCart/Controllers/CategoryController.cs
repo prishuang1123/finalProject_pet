@@ -38,6 +38,9 @@ namespace myShoppingCart.Controllers
             {
                 _db.categories.Add(obj);
                 _db.SaveChanges();
+                //ViewBag.success = "訂單創建成功!!";
+                TempData["success"] = "Category Created!!";
+
                 return RedirectToAction("Index", "Category");
             }
             return View();
@@ -58,6 +61,7 @@ namespace myShoppingCart.Controllers
         }
         public async Task<IActionResult> Edit(int? id)
         {
+            
             if (id==null || id == 0) {
                 return NotFound(); 
             }
@@ -72,6 +76,13 @@ namespace myShoppingCart.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit (Category categoryObj)
         {
+            //check if the edited name is in the category names already
+            //HashSet<Category> categoryHashSet = _db.categories.ToHashSet();
+            //if (categoryHashSet.Any(obj => obj.categoryName == categoryObj.categoryName))
+            //{
+            //    ModelState.AddModelError("categoryName", "The category name is already existed!");
+            //}
+
             if (ModelState.IsValid)
             {
                 try
@@ -79,6 +90,7 @@ namespace myShoppingCart.Controllers
                     categoryObj.modifiedAt = DateTime.UtcNow;
                     _db.categories.Update(categoryObj);
                     await _db.SaveChangesAsync();
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -92,6 +104,9 @@ namespace myShoppingCart.Controllers
                     }
                     
                 }
+                //ViewBag.success = "訂單更新成功!!";
+                TempData["success"] = "Category Updated!!";
+
                 return RedirectToAction("Index", "Category");
             }
             return View();
@@ -129,6 +144,8 @@ namespace myShoppingCart.Controllers
                     throw;
                 }
             }
+            //ViewBag.success = "訂單刪除成功!!";
+            TempData["success"] = "Category Deleted!!";
             return RedirectToAction("Index", "Category");
         }
         private bool CategoryExists(int id)
