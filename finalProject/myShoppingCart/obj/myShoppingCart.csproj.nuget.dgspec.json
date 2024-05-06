@@ -1,20 +1,111 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {}
+    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {
+    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
-        "projectName": "myShoppingCart",
-        "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
-        "packagesPath": "C:\\Users\\euyua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\obj\\",
+        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
+        "projectName": "myShoppingCart.DataAccess",
+        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\euyua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
+              },
+              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
+                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
+        "projectName": "myShoppingCart.Models",
+        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
+        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,10 +135,137 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
+        "projectName": "myShoppingCart.Utility",
+        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
+        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
+        "projectName": "myShoppingCart",
+        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
+        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj"
+              },
+              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -63,11 +281,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

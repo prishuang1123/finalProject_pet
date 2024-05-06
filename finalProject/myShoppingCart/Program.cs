@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using myShoppingCart.Data;
+using myShoppingCart.DataAccess.Data;
 using myShoppingCart.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);

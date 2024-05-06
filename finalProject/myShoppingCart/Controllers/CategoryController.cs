@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using myShoppingCart.Data.Migrations;
+using myShoppingCart.DataAccess.Data.Migrations;
 using myShoppingCart.Models;
 using myShoppingCart.ViewModels;
 

@@ -292,3 +292,9 @@ C:\Users\euyua\Desktop\Pris\資策會\finalProject_pet\finalProject\myShoppingCa
 C:\Users\euyua\Desktop\Pris\資策會\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\euyua\Desktop\Pris\資策會\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\euyua\Desktop\Pris\資策會\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.DataAccess.dll
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.Models.dll
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.Utility.dll
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.DataAccess.pdb
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.Models.pdb
+C:\Users\yuan\Desktop\Pris\資策會\finalProject\finalProject_pet\finalProject\myShoppingCart\bin\Debug\net8.0\myShoppingCart.Utility.pdb

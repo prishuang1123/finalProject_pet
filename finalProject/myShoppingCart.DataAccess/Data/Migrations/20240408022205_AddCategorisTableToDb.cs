@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace myShoppingCart.Data.Migrations
+namespace myShoppingCart.DataAccess.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategorisTableToDb : Migration

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace myShoppingCart.Data.Migrations
+namespace myShoppingCart.DataAccess.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddMaxLengthToCategoriesTable : Migration

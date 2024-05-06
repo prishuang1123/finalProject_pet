@@ -9,7 +9,7 @@ using myShoppingCart.ViewModels;
 
 #nullable disable
 
-namespace myShoppingCart.Migrations
+namespace myShoppingCart.DataAccess.Migrations
 {
     [DbContext(typeof(CartContext))]
     [Migration("20240408083234_add2ndData")]
