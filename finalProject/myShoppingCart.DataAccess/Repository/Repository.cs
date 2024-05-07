@@ -1,21 +1,30 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using myShoppingCart.DataAccess.Data;
 using myShoppingCart.DataAccess.Repository.IRepository;
+using myShoppingCart.ViewModels;
 using System.Linq.Expressions;
 
 namespace myShoppingCart.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _db;
+        //private readonly ApplicationDbContext _db;
         internal DbSet<T> dbset;
-        public Repository(ApplicationDbContext db)
+        private readonly CartContext _db;
+
+        //public Repository(ApplicationDbContext db)
+        //{
+        //    _db = db;
+        //    this.dbset=_db.Set<T>();
+        //    //dbset==_db.categories
+        //}
+
+        public Repository(CartContext db)
         {
             _db = db;
             this.dbset=_db.Set<T>();
             //dbset==_db.categories
         }
-
 
         public void Add(T entity)
         {
