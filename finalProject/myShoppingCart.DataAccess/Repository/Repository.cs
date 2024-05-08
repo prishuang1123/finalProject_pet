@@ -33,10 +33,16 @@ namespace myShoppingCart.DataAccess.Repository
 
         public T Get(Expression<Func<T, bool>> filter)
         {
-           IQueryable<T> query = dbset;
-           query=query.Where(filter);
-           return query.FirstOrDefault();
+            IQueryable<T> query = dbset;
+            query = query.Where(filter);
+            return query.FirstOrDefault();
         }
+        //T IRepository<T>.GetAsync(Expression<Func<T, bool>> filter)
+        //{
+        //    IQueryable<T> query = dbset;
+        //    query = query.Where(filter);
+        //    return query.FirstOrDefaultAsync();
+        //}
 
         public IEnumerable<T> GetAll()
         {
@@ -53,5 +59,7 @@ namespace myShoppingCart.DataAccess.Repository
         {
             dbset.RemoveRange(entity);
         }
+
+        
     }
 }

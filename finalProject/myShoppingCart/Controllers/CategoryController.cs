@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using myShoppingCart.DataAccess.Data.Migrations;
+using myShoppingCart.DataAccess;
+using myShoppingCart.DataAccess.Repository.IRepository;
 using myShoppingCart.Models;
 using myShoppingCart.ViewModels;
 
@@ -8,14 +9,14 @@ namespace myShoppingCart.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly CartContext _db;
-        public CategoryController(CartContext db)
+        private readonly ICategoryRepository _categoryRepo;
+        public CategoryController(ICategoryRepository db)
         {
-            _db= db;
+            _categoryRepo = db;
         }
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _db.categories.ToList();
+            List<Category> objCategoryList = _categoryRepo.GetAll().ToList();
             return View(objCategoryList);
         }
 
@@ -28,7 +29,7 @@ namespace myShoppingCart.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            HashSet<Category> objCategoryHashset = _db.categories.ToHashSet();
+            HashSet<Category> objCategoryHashset = _categoryRepo.GetAll().ToHashSet();
             if (objCategoryHashset.Any(old => old.categoryName == obj.categoryName))
             {
                 ModelState.AddModelError("categoryName", "The category name is already existed!");
@@ -36,8 +37,8 @@ namespace myShoppingCart.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.categories.Add(obj);
-                _db.SaveChanges();
+                _categoryRepo.Add(obj);
+                _categoryRepo.Save();
                 //ViewBag.success = "訂單創建成功!!";
                 TempData["success"] = "Category Created!!";
 
@@ -52,7 +53,7 @@ namespace myShoppingCart.Controllers
                 return NotFound();
             }
 
-            Category? categoryObj=await _db.categories.FirstOrDefaultAsync(obj=>obj.categoryId==id);
+            Category? categoryObj=_categoryRepo.Get(obj=>obj.categoryId==id);
             if (categoryObj==null)
             {
                 return NotFound();
@@ -65,7 +66,7 @@ namespace myShoppingCart.Controllers
             if (id==null || id == 0) {
                 return NotFound(); 
             }
-            Category? categoryObj = await _db.categories.FirstOrDefaultAsync(obj => obj.categoryId == id);
+            Category? categoryObj =_categoryRepo.Get(obj => obj.categoryId == id);
             if (categoryObj==null)
             {
                 return NotFound();
@@ -88,8 +89,8 @@ namespace myShoppingCart.Controllers
                 try
                 {
                     categoryObj.modifiedAt = DateTime.UtcNow;
-                    _db.categories.Update(categoryObj);
-                    await _db.SaveChangesAsync();
+                    _categoryRepo.Update(categoryObj);
+                    _categoryRepo.Save();
 
                 }
                 catch (DbUpdateConcurrencyException)
@@ -117,7 +118,7 @@ namespace myShoppingCart.Controllers
             {
                 return NotFound();
             }
-            Category categoryObj = await _db.categories.FirstOrDefaultAsync(obj=>obj.categoryId == id);
+            Category categoryObj = _categoryRepo.Get(obj => obj.categoryId == id);
             if (categoryObj == null)
             {
                 return NotFound();
@@ -130,8 +131,8 @@ namespace myShoppingCart.Controllers
         {
             try
             {
-                _db.categories.Remove(categoryObj);
-                await _db.SaveChangesAsync();
+                _categoryRepo.Remove(categoryObj);
+                _categoryRepo.Save();
             }
             catch(Exception ex)
             {
@@ -150,7 +151,9 @@ namespace myShoppingCart.Controllers
         }
         private bool CategoryExists(int id)
         {
-            return _db.categories.Any(c => c.categoryId == id);
+            Category categoryObj = _categoryRepo.Get(c => c.categoryId == id);
+
+            return categoryObj!=null ? true:false ;
         }
     }
 }

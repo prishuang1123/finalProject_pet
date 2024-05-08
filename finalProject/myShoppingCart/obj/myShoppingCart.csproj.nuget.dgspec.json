@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {}
+    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
+    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
         "projectName": "myShoppingCart.DataAccess",
-        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\euyua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\euyua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
-                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
+              "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+                "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
               },
-              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
-                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj"
+              "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
+                "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj"
               }
             }
           }
@@ -95,17 +95,17 @@
         }
       }
     },
-    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
+        "projectUniqueName": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
         "projectName": "myShoppingCart.Models",
-        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
-        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\obj\\",
+        "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj",
+        "packagesPath": "C:\\Users\\euyua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\euyua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,17 +155,17 @@
         }
       }
     },
-    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
+    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
         "projectName": "myShoppingCart.Utility",
-        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
-        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\obj\\",
+        "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\myShoppingCart.Utility.csproj",
+        "packagesPath": "C:\\Users\\euyua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\euyua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -215,17 +215,17 @@
         }
       }
     },
-    "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {
+    "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
+        "projectUniqueName": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
         "projectName": "myShoppingCart",
-        "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
-        "packagesPath": "C:\\Users\\yuan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\obj\\",
+        "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
+        "packagesPath": "C:\\Users\\euyua\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\euyua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -239,11 +239,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj"
+              "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.DataAccess\\myShoppingCart.DataAccess.csproj"
               },
-              "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
-                "projectPath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
+              "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj": {
+                "projectPath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart.Models\\myShoppingCart.Models.csproj"
               }
             }
           }

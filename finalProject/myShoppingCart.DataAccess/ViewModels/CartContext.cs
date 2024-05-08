@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using myShoppingCart.DataAccess;
+using myShoppingCart;
 using myShoppingCart.Models;
 
 namespace myShoppingCart.ViewModels
