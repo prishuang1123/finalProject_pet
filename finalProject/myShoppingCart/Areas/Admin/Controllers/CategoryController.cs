@@ -5,8 +5,9 @@ using myShoppingCart.DataAccess.Repository.IRepository;
 using myShoppingCart.Models;
 using myShoppingCart.ViewModels;
 
-namespace myShoppingCart.Controllers
+namespace myShoppingCart.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -48,13 +49,13 @@ namespace myShoppingCart.Controllers
         }
         public async Task<IActionResult> ViewDetails(int? id)
         {
-            if (id==null || id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
 
-            Category? categoryObj= _unitOfWork.Category.Get(obj=>obj.categoryId==id);
-            if (categoryObj==null)
+            Category? categoryObj = _unitOfWork.Category.Get(obj => obj.categoryId == id);
+            if (categoryObj == null)
             {
                 return NotFound();
             }
@@ -62,12 +63,13 @@ namespace myShoppingCart.Controllers
         }
         public async Task<IActionResult> Edit(int? id)
         {
-            
-            if (id==null || id == 0) {
-                return NotFound(); 
+
+            if (id == null || id == 0)
+            {
+                return NotFound();
             }
             Category? categoryObj = _unitOfWork.Category.Get(obj => obj.categoryId == id);
-            if (categoryObj==null)
+            if (categoryObj == null)
             {
                 return NotFound();
             }
@@ -75,7 +77,7 @@ namespace myShoppingCart.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit (Category categoryObj)
+        public async Task<IActionResult> Edit(Category categoryObj)
         {
             //check if the edited name is in the category names already
             //HashSet<Category> categoryHashSet = _db.categories.ToHashSet();
@@ -103,7 +105,7 @@ namespace myShoppingCart.Controllers
                     {
                         throw;
                     }
-                    
+
                 }
                 //ViewBag.success = "訂單更新成功!!";
                 TempData["success"] = "Category Updated!!";
@@ -114,7 +116,7 @@ namespace myShoppingCart.Controllers
         }
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id==null || id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
@@ -134,7 +136,7 @@ namespace myShoppingCart.Controllers
                 _unitOfWork.Category.Remove(categoryObj);
                 _unitOfWork.Save();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (!CategoryExists(categoryObj.categoryId))
                 {
@@ -153,7 +155,7 @@ namespace myShoppingCart.Controllers
         {
             Category categoryObj = _unitOfWork.Category.Get(c => c.categoryId == id);
 
-            return categoryObj!=null ? true:false ;
+            return categoryObj != null ? true : false;
         }
     }
 }

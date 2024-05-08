@@ -2,8 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using myShoppingCart.Models;
 using System.Diagnostics;
 
-namespace myShoppingCart.Controllers
+namespace myShoppingCart.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
