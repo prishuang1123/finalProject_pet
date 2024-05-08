@@ -9,14 +9,14 @@ namespace myShoppingCart.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _categoryRepo;
-        public CategoryController(ICategoryRepository db)
+        private readonly IUnitOfWork _unitOfWork;
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _categoryRepo = db;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _categoryRepo.GetAll().ToList();
+            List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();
             return View(objCategoryList);
         }
 
@@ -29,7 +29,7 @@ namespace myShoppingCart.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            HashSet<Category> objCategoryHashset = _categoryRepo.GetAll().ToHashSet();
+            HashSet<Category> objCategoryHashset = _unitOfWork.Category.GetAll().ToHashSet();
             if (objCategoryHashset.Any(old => old.categoryName == obj.categoryName))
             {
                 ModelState.AddModelError("categoryName", "The category name is already existed!");
@@ -37,8 +37,8 @@ namespace myShoppingCart.Controllers
 
             if (ModelState.IsValid)
             {
-                _categoryRepo.Add(obj);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Add(obj);
+                _unitOfWork.Save();
                 //ViewBag.success = "訂單創建成功!!";
                 TempData["success"] = "Category Created!!";
 
@@ -53,7 +53,7 @@ namespace myShoppingCart.Controllers
                 return NotFound();
             }
 
-            Category? categoryObj=_categoryRepo.Get(obj=>obj.categoryId==id);
+            Category? categoryObj= _unitOfWork.Category.Get(obj=>obj.categoryId==id);
             if (categoryObj==null)
             {
                 return NotFound();
@@ -66,7 +66,7 @@ namespace myShoppingCart.Controllers
             if (id==null || id == 0) {
                 return NotFound(); 
             }
-            Category? categoryObj =_categoryRepo.Get(obj => obj.categoryId == id);
+            Category? categoryObj = _unitOfWork.Category.Get(obj => obj.categoryId == id);
             if (categoryObj==null)
             {
                 return NotFound();
@@ -89,8 +89,8 @@ namespace myShoppingCart.Controllers
                 try
                 {
                     categoryObj.modifiedAt = DateTime.UtcNow;
-                    _categoryRepo.Update(categoryObj);
-                    _categoryRepo.Save();
+                    _unitOfWork.Category.Update(categoryObj);
+                    _unitOfWork.Save();
 
                 }
                 catch (DbUpdateConcurrencyException)
@@ -118,7 +118,7 @@ namespace myShoppingCart.Controllers
             {
                 return NotFound();
             }
-            Category categoryObj = _categoryRepo.Get(obj => obj.categoryId == id);
+            Category categoryObj = _unitOfWork.Category.Get(obj => obj.categoryId == id);
             if (categoryObj == null)
             {
                 return NotFound();
@@ -131,8 +131,8 @@ namespace myShoppingCart.Controllers
         {
             try
             {
-                _categoryRepo.Remove(categoryObj);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Remove(categoryObj);
+                _unitOfWork.Save();
             }
             catch(Exception ex)
             {
@@ -151,7 +151,7 @@ namespace myShoppingCart.Controllers
         }
         private bool CategoryExists(int id)
         {
-            Category categoryObj = _categoryRepo.Get(c => c.categoryId == id);
+            Category categoryObj = _unitOfWork.Category.Get(c => c.categoryId == id);
 
             return categoryObj!=null ? true:false ;
         }
