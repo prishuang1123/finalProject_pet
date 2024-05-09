@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace myShoppingCart.Models
 {
+    
     public class Category
     {
         [Key]

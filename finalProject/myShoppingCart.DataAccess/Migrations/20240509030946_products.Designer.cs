@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using myShoppingCart.ViewModels;
 
 #nullable disable
 
-namespace myShoppingCart.Migrations
+namespace myShoppingCart.DataAccess.Migrations
 {
     [DbContext(typeof(CartContext))]
-    partial class CartContextModelSnapshot : ModelSnapshot
+    [Migration("20240509030946_products")]
+    partial class products
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,16 +57,16 @@ namespace myShoppingCart.Migrations
                         new
                         {
                             categoryId = 1,
-                            categoryDesc = "Books belonging to the genre of Actions",
-                            categoryName = "Action",
-                            createdAt = new DateTime(2024, 5, 9, 6, 1, 11, 55, DateTimeKind.Utc).AddTicks(6757)
+                            categoryDesc = "training courses for cats",
+                            categoryName = "cat",
+                            createdAt = new DateTime(2024, 5, 9, 3, 9, 45, 517, DateTimeKind.Utc).AddTicks(476)
                         },
                         new
                         {
                             categoryId = 2,
-                            categoryDesc = "Books belonging to the genre of Sci-Fi",
-                            categoryName = "Sci-Fi",
-                            createdAt = new DateTime(2024, 5, 9, 6, 1, 11, 55, DateTimeKind.Utc).AddTicks(6761)
+                            categoryDesc = "training courses for small dogs",
+                            categoryName = "dog(s)",
+                            createdAt = new DateTime(2024, 5, 9, 3, 9, 45, 517, DateTimeKind.Utc).AddTicks(555)
                         });
                 });
 

@@ -33,7 +33,7 @@ namespace myShoppingCart.Areas.Admin.Controllers
             HashSet<Category> objCategoryHashset = _unitOfWork.Category.GetAll().ToHashSet();
             if (objCategoryHashset.Any(old => old.categoryName == obj.categoryName))
             {
-                ModelState.AddModelError("categoryName", "The category name is already existed!");
+                ModelState.AddModelError("categoryName", "The category name has already existed!");
             }
 
             if (ModelState.IsValid)
@@ -77,7 +77,7 @@ namespace myShoppingCart.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Category categoryObj)
+        public async Task<IActionResult> Edit([Bind("categoryId, categoryName, categoryDesc, createdAt, modifiedAt")] Category categoryObj)
         {
             //check if the edited name is in the category names already
             //HashSet<Category> categoryHashSet = _db.categories.ToHashSet();
@@ -109,7 +109,6 @@ namespace myShoppingCart.Areas.Admin.Controllers
                 }
                 //ViewBag.success = "訂單更新成功!!";
                 TempData["success"] = "Category Updated!!";
-
                 return RedirectToAction("Index", "Category");
             }
             return View();
@@ -136,7 +135,7 @@ namespace myShoppingCart.Areas.Admin.Controllers
                 _unitOfWork.Category.Remove(categoryObj);
                 _unitOfWork.Save();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 if (!CategoryExists(categoryObj.categoryId))
                 {

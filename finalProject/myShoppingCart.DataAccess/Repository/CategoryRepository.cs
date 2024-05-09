@@ -21,7 +21,7 @@ namespace myShoppingCart.DataAccess.Repository
 
         public void Update(Category obj)
         {
-            _db.categories.Add(obj);
+            _db.categories.Update(obj);
         }
     }
 }

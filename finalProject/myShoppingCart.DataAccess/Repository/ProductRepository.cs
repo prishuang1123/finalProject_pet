@@ -16,5 +16,9 @@ namespace myShoppingCart.DataAccess.Repository
         {
             _db = db;
         }
+        public void Update(Product obj)
+        {
+            _db.products.Update(obj);
+        }
     }
 }

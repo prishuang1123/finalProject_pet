@@ -18,8 +18,10 @@ namespace myShoppingCart.ViewModels
         {
 
             modelBuilder.Entity<Category>().HasData(
-                new Category { categoryId = 1, categoryName = "cat", categoryDesc = "training courses for cats" },
-                new Category { categoryId = 2, categoryName = "dog(s)", categoryDesc = "training courses for small dogs" }
+                //new Category { categoryId = 1, categoryName = "cat", categoryDesc = "training courses for cats" },
+                //new Category { categoryId = 2, categoryName = "dog(s)", categoryDesc = "training courses for small dogs" },
+                new Category { categoryId = 1, categoryName = "Action", categoryDesc = "Books belonging to the genre of Actions" },
+                new Category { categoryId = 2, categoryName = "Sci-Fi", categoryDesc = "Books belonging to the genre of Sci-Fi" }
                 );
             modelBuilder.Entity<Product>().HasData(
                 new Product
