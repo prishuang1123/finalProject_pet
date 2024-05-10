@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using myShoppingCart.DataAccess.Repository;
 using myShoppingCart.DataAccess.Repository.IRepository;
 using myShoppingCart.Models;
+using System.Collections.Generic;
 
 namespace myShoppingCart.Areas.Admin.Controllers
 {
@@ -42,6 +44,12 @@ namespace myShoppingCart.Areas.Admin.Controllers
         // GET: ProductController/Create
         public IActionResult Create()
         {
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+            {
+                Text = u.categoryName,
+                Value = u.categoryId.ToString()
+            });
+            ViewBag.CategroyList = CategoryList;
             return View();
         }
 
