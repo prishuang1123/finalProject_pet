@@ -26,7 +26,7 @@ namespace myShoppingCart.Areas.Admin.Controllers
         // GET: ProductController
         public IActionResult Index()
         {
-            List<Product> objProductList = _unitOfWork.Product.GetAll().ToList();
+            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
             return View(objProductList);
         }
 

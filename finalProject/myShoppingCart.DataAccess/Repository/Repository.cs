@@ -24,6 +24,7 @@ namespace myShoppingCart.DataAccess.Repository
             _db = db;
             this.dbset=_db.Set<T>();
             //dbset==_db.categories
+            _db.products.Include(u => u.Category);
         }
 
         public void Add(T entity)
@@ -31,10 +32,17 @@ namespace myShoppingCart.DataAccess.Repository
            dbset.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
         {
             IQueryable<T> query = dbset;
             query = query.Where(filter);
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
             return query.FirstOrDefault();
         }
         //T IRepository<T>.GetAsync(Expression<Func<T, bool>> filter)
@@ -44,9 +52,17 @@ namespace myShoppingCart.DataAccess.Repository
         //    return query.FirstOrDefaultAsync();
         //}
 
-        public IEnumerable<T> GetAll()
+        //Category,CategoryId,
+        public IEnumerable<T> GetAll(string? includeProperties=null)
         {
             IQueryable<T> query = dbset;
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query=query.Include(includeProp);
+                }
+            }
             return query.ToList();
         }
 
