@@ -78,11 +78,11 @@ namespace myShoppingCart.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
-            HashSet<Product> productHashset = _unitOfWork.Product.GetAll().ToHashSet();
-            if (productHashset.Any(productObj => productObj.Title == productVM.Product.Title))
-            {
-                ModelState.AddModelError("Title", "The title has already existed!");
-            }
+            //HashSet<Product> productHashset = _unitOfWork.Product.GetAll().ToHashSet();
+            //if (productHashset.Any(productObj => productObj.Title == productVM.Product.Title))
+            //{
+            //    ModelState.AddModelError("Title", "The title has already existed!");
+            //}
             if (ModelState.IsValid)
             {
                 try
@@ -92,6 +92,17 @@ namespace myShoppingCart.Areas.Admin.Controllers
                     {
                         string fileName=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);
                         string productPath=Path.Combine(webRootPath, @"images\product");
+
+                        if(!string.IsNullOrEmpty(productVM.Product.ImageUrl))
+                        {
+                            //delete old image
+                            var oldImagePath=Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
                         using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
                         {
                             file.CopyTo(fileStream);
@@ -99,7 +110,15 @@ namespace myShoppingCart.Areas.Admin.Controllers
 
                         productVM.Product.ImageUrl = @"\images\product\" + fileName;
                     }
-                    _unitOfWork.Product.Add(productVM.Product);
+                    if (productVM.Product.Id == 0)
+                    {
+                        _unitOfWork.Product.Add(productVM.Product);
+                    }
+                    else
+                    {
+                        _unitOfWork.Product.Update(productVM.Product);
+                    }
+                    
                     _unitOfWork.Save();
                     TempData["success"] = "Product Created!!";
                     return RedirectToAction("Index", "Product");
