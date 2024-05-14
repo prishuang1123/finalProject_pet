@@ -6,7 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using myShoppingCart.DataAccess.Repository;
 using myShoppingCart.DataAccess.Repository.IRepository;
 using myShoppingCart.Models;
+using myShoppingCart.Models.ViewModels;
 using System.Collections.Generic;
+
 
 namespace myShoppingCart.Areas.Admin.Controllers
 {
@@ -42,24 +44,40 @@ namespace myShoppingCart.Areas.Admin.Controllers
         }
 
         // GET: ProductController/Create
-        public IActionResult Create()
+        public IActionResult Upsert(int? id)
         {
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+            ProductVM productVM = new()
             {
-                Text = u.categoryName,
-                Value = u.categoryId.ToString()
-            });
-            ViewBag.CategroyList = CategoryList;
-            return View();
+                //create
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.categoryName,
+                    Value = u.categoryId.ToString()
+                }),
+                Product = new Product()
+            };
+            //ViewBag.CategroyList = CategoryList;
+            if (id == null || id == 0)
+            {
+                return View(productVM);
+            }
+            else
+            {
+                //update
+                productVM.Product = _unitOfWork.Product.Get(obj => obj.Id == id);
+                return View(productVM);
+            }
+           
+            
         }
 
         // POST: ProductController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Product obj)
+        public ActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
             HashSet<Product> productHashset = _unitOfWork.Product.GetAll().ToHashSet();
-            if (productHashset.Any(productObj => productObj.Title == obj.Title))
+            if (productHashset.Any(productObj => productObj.Title == productVM.Product.Title))
             {
                 ModelState.AddModelError("Title", "The title has already existed!");
             }
@@ -67,64 +85,82 @@ namespace myShoppingCart.Areas.Admin.Controllers
             {
                 try
                 {
-                    _unitOfWork.Product.Add(obj);
+                    _unitOfWork.Product.Add(productVM.Product);
                     _unitOfWork.Save();
                     TempData["success"] = "Product Created!!";
                     return RedirectToAction("Index", "Product");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    return View();
+                   
                 }
+                
             }
-            return View();
-        }
-
-        // GET: ProductController/Edit/5
-        public async Task<ActionResult> Edit(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            Product? productObj = _unitOfWork.Product.Get(obj => obj.Id == id);
-            if (productObj == null)
-            {
-                return NotFound();
-            }
-            return View(productObj);
-        }
-
-        // POST: ProductController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(Product obj)
-        {
-            if (ModelState.IsValid)
+            else
             {
                 try
                 {
-                    _unitOfWork.Product.Update(obj);
-                    _unitOfWork.Save();
+                    productVM.CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                    {
+                        Text = u.categoryName,
+                        Value = u.categoryId.ToString()
+                    });
+                    return View(productVM);
+                }
+                catch (Exception ex)
+                {
                     
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(obj.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-
-                }
-                TempData["success"] = "Product Updated!!";
-                return RedirectToAction("Index", "Product");
             }
             return View();
         }
+
+        
+        //// GET: ProductController/Edit/5
+        //public async Task<ActionResult> Edit(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Product? productObj = _unitOfWork.Product.Get(obj => obj.Id == id);
+        //    if (productObj == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(productObj);
+        //}
+
+        //// POST: ProductController/Edit/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<ActionResult> Edit(Product obj)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            _unitOfWork.Product.Update(obj);
+        //            _unitOfWork.Save();
+                    
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!ProductExists(obj.Id))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+
+        //        }
+        //        TempData["success"] = "Product Updated!!";
+        //        return RedirectToAction("Index", "Product");
+        //    }
+        //    return View();
+        //}
 
         // GET: ProductController/Delete/5
         public async Task<IActionResult> Delete(int? id)
