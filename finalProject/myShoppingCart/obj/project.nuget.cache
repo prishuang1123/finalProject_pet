@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "NybcrA8ysqqA1KZYaH1OBzkP+dCCU2v8PfMqIuCwomYMrgnHrhfTV8ytT/27kISRWCr1T9CSlt26Su2d36F9oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
+  "projectFilePath": "C:\\Users\\yuan\\Desktop\\Pris\\資策會\\finalProject\\finalProject_pet\\finalProject\\myShoppingCart\\myShoppingCart.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\euyua\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\euyua\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
