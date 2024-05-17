@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using myShoppingCart.DataAccess.Migrations;
 using myShoppingCart.DataAccess.Repository;
 using myShoppingCart.DataAccess.Repository.IRepository;
 using myShoppingCart.Models;
@@ -148,55 +149,9 @@ namespace myShoppingCart.Areas.Admin.Controllers
             return View();
         }
 
-        
-        //// GET: ProductController/Edit/5
-        //public async Task<ActionResult> Edit(int? id)
-        //{
-        //    if (id == null || id == 0)
-        //    {
-        //        return NotFound();
-        //    }
-        //    Product? productObj = _unitOfWork.Product.Get(obj => obj.Id == id);
-        //    if (productObj == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(productObj);
-        //}
 
-        //// POST: ProductController/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> Edit(Product obj)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        try
-        //        {
-        //            _unitOfWork.Product.Update(obj);
-        //            _unitOfWork.Save();
-                    
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!ProductExists(obj.Id))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-
-        //        }
-        //        TempData["success"] = "Product Updated!!";
-        //        return RedirectToAction("Index", "Product");
-        //    }
-        //    return View();
-        //}
-
-        // GET: ProductController/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // GET: ProductController/Edit/5
+        public async Task<ActionResult> Edit(int? id)
         {
             if (id == null || id == 0)
             {
@@ -210,12 +165,58 @@ namespace myShoppingCart.Areas.Admin.Controllers
             return View(productObj);
         }
 
+        // POST: ProductController/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(Product obj)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _unitOfWork.Product.Update(obj);
+                    _unitOfWork.Save();
+
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ProductExists(obj.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+
+                }
+                TempData["success"] = "Product Updated!!";
+                return RedirectToAction("Index", "Product");
+            }
+            return View();
+        }
+
+        //GET: ProductController/Delete/5
+        //public async Task<IActionResult> Delete(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
+        //    Product? productObj = _unitOfWork.Product.Get(obj => obj.Id == id);
+        //    if (productObj == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(productObj);
+        //}
+
         // POST: ProductController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(Product obj)
         {
-            
+
             try
             {
                 _unitOfWork.Product.Remove(obj);
@@ -243,5 +244,37 @@ namespace myShoppingCart.Areas.Admin.Controllers
 
             return productObj != null ? true : false;
         }
+
+        #region API CALLS
+
+        [HttpGet]
+        public IActionResult GetAll() 
+        {
+            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+            return Json(new {data=objProductList});
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var productToBeDeleted = _unitOfWork.Product.Get(u => u.Id == id);
+            if (productToBeDeleted == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+            _unitOfWork.Product.Remove(productToBeDeleted);
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Delete Successful" });
+
+        }
+
+        #endregion
     }
 }

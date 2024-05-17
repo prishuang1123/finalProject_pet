@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <table class="table table-hover table-striped table-bordered">
+        <table id="myTable" class="table table-hover table-striped table-bordered">
             <thead>
                 <tr>
                     <th>
@@ -41,7 +41,7 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            @* <tbody>
                 @foreach (var obj in Model)
                 {
                     <tr>
@@ -76,9 +76,52 @@
                         </td>
                     </tr>
                 }
-            </tbody>
+
+
+            </tbody> *@
         </table>
     </div>
 </div>
 
 
+@section Scripts
+{
+    @* <script src="~/js/product.js"></script> *@
+    <script>
+        $(document).ready(function () {
+            //let table = new DataTable('#myTable');
+            loadDataTable();
+        });
+
+        function loadDataTable() {
+            let table = new DataTable('#myTable', {
+                "ajax": { "url": '/admin/product/getall' },
+                dataSrc: 'data',
+                columns: [
+                    { data: 'title'},
+                    { data: 'isbn' },
+                    { data: 'author' },
+                    { data: 'listPrice' },
+                    { data: 'category.categoryName' },
+                    {
+                      data: 'id',
+                      "render": function (data) {
+                          return `<div class="w-75 btn-group" role="group">
+                              <a href="/admin/product/viewdetails?id=${data}" class="btn btn-secondary mx-1 px-2">
+                                          <i class="bi bi-eye"></i>
+                                      </a>
+                                      <a href="/admin/product/upsert?id=${data}" class="btn btn-secondary mx-1 px-2">
+                                          <i class="bi bi-pencil-square"></i>
+                                      </a>
+                                      <a href="/admin/product/delete?id=${data}" class="btn btn-secondary mx-1 px-2">
+                                          <i class="bi bi-trash"></i>
+                                      </a>
+                          </div>`
+                      }
+                   }
+                ]
+            });
+        };
+    </script>
+    
+}

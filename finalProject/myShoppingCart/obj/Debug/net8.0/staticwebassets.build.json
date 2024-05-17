@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wxXUQbwAH6P0aDZZblL2zNA95/FY91JGp7QDCuBx+kw=",
+  "Hash": "ONKykKM9HJan6bLSqZO4mYW6XrvMYmLzZLHxJI9OCNk=",
   "Source": "myShoppingCart",
   "BasePath": "_content/myShoppingCart",
   "Mode": "Default",
@@ -1421,6 +1421,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\ef3c3ee9-dbd3-4f8d-9622-c2431c972b4f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\wwwroot\\js\\product.js",
+      "SourceId": "myShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\wwwroot\\",
+      "BasePath": "_content/myShoppingCart",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\euyua\\Desktop\\Pris\\資策會\\finalProject_pet\\finalProject\\myShoppingCart\\wwwroot\\js\\site.js",
